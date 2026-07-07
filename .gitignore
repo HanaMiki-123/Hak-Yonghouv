@@ -15,6 +15,9 @@ dist-ssr
 # Encrypt File Code
 NOTED.houv
 
+# Netlify
+netlify.toml
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
