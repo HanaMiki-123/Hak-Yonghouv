@@ -4,7 +4,7 @@ import pkg from "./package.json";
 
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
-  bulid: {
+  build: {
     // sourcemap: mode === 'development',
     sourcemap: true,
   },
