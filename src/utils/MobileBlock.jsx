@@ -165,7 +165,7 @@ const MobileBlock = () => {
             </div>
 
             {/* Bottom watermark */}
-            <div className="mb-watermark">
+            <div className="mb-watermark" style={{ marginBottom: '50px' }}>
                 <span>© Hak Yonghouv Website</span>
             </div>
         </div>
