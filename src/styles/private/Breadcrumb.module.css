@@ -1,0 +1,13 @@
+.breadcrumb {
+    padding-top: 10vh;
+    margin-left: 10vh;
+
+    a {
+        text-decoration: none;
+        color: #999999;
+
+        &:hover {
+            color: #000;
+        }
+    }
+}

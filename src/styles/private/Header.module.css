@@ -1,0 +1,161 @@
+.header {
+    width: 100%;
+    height: 8vh;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 9999999999;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(60, 60, 60, 0.834);
+    backdrop-filter: blur(10px);
+}
+
+.left {
+    display: flex;
+    margin-left: 50px;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+    .song_icon_box {
+        width: 30px;
+        height: 30px;
+        border: 1px solid rgba(192, 192, 192, 0.5);
+        border-radius: 50%;
+        padding: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        .icon_song {
+            transform: rotate(-30deg);
+            font-size: 1.1rem;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 30px;
+
+        .ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            .link {
+                color: var(--white);
+                text-decoration: none;
+                position: relative;
+                display: inline-block;
+                padding-bottom: 8px;
+                padding-top: 14px;
+                cursor: pointer;
+
+                .dropdown {
+                    display: none;
+                    transition: display 0.3s ease;
+                }
+
+                &:hover .dropdown {
+                    display: flex;
+
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: var(--white);
+                    transform: scaleX(0);
+                    transform-origin: left;
+                    transition: transform 0.3s ease;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                }
+
+                .li {
+                    display: flex;
+                    gap: 10px;
+                    padding-top: 15px;
+                    padding-bottom: 15px;
+                    list-style: none;
+                    color: var(--white);
+                    text-transform: uppercase;
+                    font-size: 0.8rem;
+
+                    &:hover {
+                        text-shadow: 0 0 15px #0040ff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: rgba(60, 60, 60, 0.834);
+    backdrop-filter: blur(10px);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+    .li_dropdown {
+        list-style: none;
+        padding: 5px;
+    }
+
+    .link_dropdown {
+        width: max-content;
+        display: inline-block;
+        color: var(--white);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        position: relative;
+        padding-bottom: 4px;
+        padding-left: 5px;
+        padding-right: 5px;
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--white);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform .3s ease;
+        }
+
+        &:hover::after {
+            transform: scaleX(1);
+        }
+
+        &:hover {
+            text-shadow: 0 0 15px #0040ff;
+        }
+    }
+}

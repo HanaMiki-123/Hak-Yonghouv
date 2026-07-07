@@ -1,0 +1,26 @@
+{
+    "navbar": {
+        "website": [
+            {
+                "title": "Hak Yonghouv",
+                "url": "https://www.houv.online",
+                "target": "_blank"
+            },
+            {
+                "title": "Website collection",
+                "url": "https://houv.vercel.app",
+                "target": "_blank"
+            },
+            {
+                "title": "Encrypt website",
+                "url": "https://houv-encrypt.vercel.app",
+                "target": "_blank"
+            },
+            {
+                "title": "More",
+                "url": "/news",
+                "target": "_parent"
+            }
+        ]
+    }
+}

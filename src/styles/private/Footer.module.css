@@ -1,0 +1,100 @@
+.footer {
+    background: rgba(3, 5, 10, 0.95);
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 60px 0px 30px;
+    position: relative;
+    z-index: 5;
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 24px;
+
+        .box_footer1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+            text-align: left;
+
+            .text_logo {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                margin-bottom: 16px;
+
+                .title_logo {
+                    font-weight: 800;
+                    font-size: 18px;
+                    color: white;
+                    font-family: var(--font-heading);
+                }
+            }
+
+            .description {
+                font-size: 13px;
+                color: var(--text-muted);
+                line-height: 1.6;
+                color: var(--white);
+            }
+        }
+
+        .box_footer2 {
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            padding-top: 24px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            .copyright {
+                font-size: 14px;
+                color: var(--text-muted);
+                color: var(--white);
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.navigation {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.ul_nav {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .a_nav {
+        font-size: 14px;
+        color: var(--text-muted);
+        line-height: 1.6;
+        color: var(--white);
+        text-transform: uppercase;
+        transition: var(--transition);
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        gap: 10px;
+
+        .icon {
+            font-size: 10px;
+        }
+
+        &:hover {
+            color: var(--primary);
+        }
+    }
+}

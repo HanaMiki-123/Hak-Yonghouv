@@ -1,0 +1,111 @@
+.login_box {
+    width: 30%;
+    padding: 25px;
+    position: fixed;
+    top: 15vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    border: 1px solid #9a9999bb;
+    background-color: aliceblue;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: login 0.3s ease-in;
+    overflow: hidden;
+
+    .title {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .form_login {
+        width: 100%;
+
+        .box_form {
+            margin-bottom: 15px;
+
+            label {
+                font-weight: 600;
+            }
+
+            input {
+                outline: none;
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-top: 5px;
+                transition: all 0.3s ease;
+
+                &:focus {
+                    border-color: blue;
+                }
+            }
+        }
+
+        .box_btn_login {
+            margin-top: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            button {
+                width: 100%;
+                padding: 10px 20px;
+                border: none;
+                border-radius: 10px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                background-color: rgba(0, 0, 255, 0.544);
+                color: var(--white);
+                font-size: 1rem;
+
+                &:hover {
+                    background-color: blue;
+                    transform: translateY(-2px);
+                }
+            }
+        }
+    }
+
+    .option_login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 30px;
+
+        .register,
+        .forgot {
+            color: rgba(0, 17, 255, 0.753);
+            text-decoration: none;
+            font-family: 'Times New Roman', Times, serif;
+        }
+    }
+
+    .close_box {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: rgb(200, 200, 200);
+        }
+    }
+}
+
+@keyframes login {
+    from {
+        transform: translateX(-50%) translateY(-5%);
+    }
+
+    to {
+        transform: translateX(-50%) translateY(0%);
+    }
+}
