@@ -5,8 +5,8 @@ import pkg from "./package.json";
 export default defineConfig(({ mode }) => ({
   plugins: [react()],
   bulid: {
-    sourcemap: mode === 'development',
-    // sourcemap: true,
+    // sourcemap: mode === 'development',
+    sourcemap: true,
   },
   define: {
     __APP_NAME__: JSON.stringify(pkg.name),

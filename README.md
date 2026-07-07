@@ -122,6 +122,13 @@ git remote add origin ( https:// .... )
 git branch -M main
 git push -u origin main
 
+
+git pull origin main
+# កែ code
+git add .
+git commit -m "Add contact page"
+git push origin main
+
 # If want chang remote 
 
 git remote remove origin
