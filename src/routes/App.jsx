@@ -5,6 +5,8 @@ import json from '../hooks/components/compo_route.json';
 import Breadcrumb from "../utils/Breadcrumb";
 import Loading from "../utils/Loading";
 import ScrollUp from "../utils/ScrollUp";
+import MobileBlock from "../utils/MobileBlock";
+import useDeviceDetect from "../hooks/useDeviceDetect";
 
 import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
@@ -13,6 +15,13 @@ const Home = lazy(() => import('../page/home/pages/Home'));
 const News = lazy(() => import('../page/news/pages/News'));
 
 const App = () => {
+  const { isMobile } = useDeviceDetect();
+
+  // Show mobile block page if user is on phone or tablet
+  if (isMobile) {
+    return <MobileBlock />;
+  }
+
   return (
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
