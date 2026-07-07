@@ -5,6 +5,7 @@ import json from '../hooks/components/compo_route.json';
 import Breadcrumb from "../utils/Breadcrumb";
 import Loading from "../utils/Loading";
 import ScrollUp from "../utils/ScrollUp";
+import { Analytics } from "@vercel/analytics/next"
 
 import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
@@ -17,6 +18,7 @@ const App = () => {
     <BrowserRouter>
       <Suspense fallback={<Loading />}>
         <Header />
+        <Analytics />
         <Breadcrumb />
         <Routes>
           <Route path={json.home_page.p1} element={<Home />} />
