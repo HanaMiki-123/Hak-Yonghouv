@@ -5,7 +5,7 @@ import json from '../hooks/components/compo_route.json';
 import Breadcrumb from "../utils/Breadcrumb";
 import Loading from "../utils/Loading";
 import ScrollUp from "../utils/ScrollUp";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 
 import Header from '../components/ui/Header';
 import Footer from '../components/ui/Footer';
