@@ -1,84 +1,112 @@
 .header {
     width: 100%;
     height: 8vh;
-    padding: 0 1rem;
+    padding: 0 3rem;
     position: fixed;
-    z-index: 9999999999;
+    z-index: 999999;
     top: 0;
     left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(60, 60, 60, 0.834);
-    backdrop-filter: blur(10px);
+    background-color: rgba(9, 14, 26, 0.75);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
 }
 
 .left {
     display: flex;
-    margin-left: 50px;
-    gap: 10px;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
+    width: 100%;
 
     .song_icon_box {
-        width: 30px;
-        height: 30px;
-        border: 1px solid rgba(192, 192, 192, 0.5);
+        width: 32px;
+        height: 32px;
+        border: 1px solid rgba(79, 195, 247, 0.3);
         border-radius: 50%;
-        padding: 5px;
         display: flex;
         align-items: center;
         justify-content: center;
         cursor: pointer;
+        transition: all 0.3s ease;
+        background: rgba(79, 195, 247, 0.05);
+
+        &:hover {
+            background: rgba(79, 195, 247, 0.15);
+            border-color: rgba(79, 195, 247, 0.6);
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+        }
 
         .icon_song {
             transform: rotate(-30deg);
-            font-size: 1.1rem;
+            font-size: 1.15rem;
         }
+    }
+
+    .brand_name {
+        color: var(--white);
+        user-select: none;
+        font-weight: 800;
+        letter-spacing: 0.5px;
+        font-size: 1.15rem;
+        background: linear-gradient(90deg, #fff, #b3e5fc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .navbar {
         display: flex;
         align-items: center;
-        justify-content: center;
-        margin-left: 30px;
+        margin-left: auto;
+        /* Push navbar to the right */
 
         .ul {
             display: flex;
             align-items: center;
-            justify-content: center;
-            gap: 2rem;
+            gap: 2.5rem;
+            list-style: none;
 
             .link {
-                color: var(--white);
+                color: rgba(255, 255, 255, 0.7);
                 text-decoration: none;
                 position: relative;
                 display: inline-block;
-                padding-bottom: 8px;
-                padding-top: 14px;
                 cursor: pointer;
+                transition: color 0.3s ease;
 
                 .dropdown {
+                    width: max-content;
                     display: none;
-                    transition: display 0.3s ease;
+                    opacity: 0;
+                    transform: translateY(10px);
+                    transition: opacity 0.3s ease, transform 0.3s ease;
+                }
+
+                &:hover {
+                    color: #4fc3f7;
                 }
 
                 &:hover .dropdown {
                     display: flex;
-
+                    opacity: 1;
+                    transform: translateY(0);
                 }
 
                 &::after {
                     content: "";
                     position: absolute;
                     left: 0;
-                    top: 0;
+                    bottom: -4px;
                     width: 100%;
-                    height: 3px;
-                    background-color: var(--white);
+                    height: 2px;
+                    background-color: #4fc3f7;
                     transform: scaleX(0);
                     transform-origin: left;
-                    transition: transform 0.3s ease;
+                    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
                 }
 
                 &:hover::after {
@@ -87,17 +115,14 @@
 
                 .li {
                     display: flex;
-                    gap: 10px;
-                    padding-top: 15px;
-                    padding-bottom: 15px;
+                    align-items: center;
+                    gap: 6px;
+                    padding: 12px 0;
                     list-style: none;
-                    color: var(--white);
                     text-transform: uppercase;
-                    font-size: 0.8rem;
-
-                    &:hover {
-                        text-shadow: 0 0 15px #0040ff;
-                    }
+                    font-size: 0.82rem;
+                    font-weight: 600;
+                    letter-spacing: 1px;
                 }
             }
         }
@@ -106,56 +131,42 @@
 
 .dropdown {
     position: absolute;
-    top: 100%;
-    left: 0;
-    background: rgba(60, 60, 60, 0.834);
-    backdrop-filter: blur(10px);
+    top: calc(100% + 4px);
+    left: -15px;
+    background: rgba(9, 14, 26, 0.95);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    gap: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    min-width: 180px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
 
     .li_dropdown {
         list-style: none;
-        padding: 5px;
     }
 
     .link_dropdown {
-        width: max-content;
-        display: inline-block;
-        color: var(--white);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: rgba(255, 255, 255, 0.7);
         text-decoration: none;
         text-transform: uppercase;
-        font-size: 0.8rem;
-        position: relative;
-        padding-bottom: 4px;
-        padding-left: 5px;
-        padding-right: 5px;
-        display: flex;
-        gap: 10px;
-        margin-top: 10px;
-
-        &::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--white);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform .3s ease;
-        }
-
-        &:hover::after {
-            transform: scaleX(1);
-        }
+        font-size: 0.78rem;
+        font-weight: 600;
+        padding: 8px 12px;
+        border-radius: 6px;
+        transition: all 0.2s ease;
 
         &:hover {
-            text-shadow: 0 0 15px #0040ff;
+            color: #4fc3f7;
+            background: rgba(79, 195, 247, 0.08);
+            padding-left: 16px;
         }
     }
 }

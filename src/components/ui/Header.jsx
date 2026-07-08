@@ -42,7 +42,7 @@ const Header = () => {
                             <IoVolumeMute className={style.icon_song} style={{ color: "white" }} />
                         )}
                     </div>
-                    <h3 style={{ color: 'var(--white)', userSelect: 'none' }}>Hak Yonghouv</h3>
+                    <h3 className={style.brand_name}>Hak Yonghouv</h3>
                     <nav className={style.navbar}>
                         <ul className={style.ul}>
                             <Link to={route.home_page.p1} className={style.link}><li className={style.li}>Home</li></Link>
