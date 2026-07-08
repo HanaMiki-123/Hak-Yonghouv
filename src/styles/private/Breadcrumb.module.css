@@ -1,6 +1,9 @@
 .breadcrumb {
-    padding-top: 10vh;
-    margin-left: 10vh;
+    position: absolute;
+    top: 8vh;
+    left: 0;
+    padding: 8px 10vh;
+    z-index: 100;
 
     a {
         text-decoration: none;
