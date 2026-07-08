@@ -45,6 +45,7 @@
     "react-toastify": "^11.1.0",
     "recharts": "^3.8.1",
     "sweetalert2": "^11.26.25",
+    "swiper": "^14.0.2",
     "uuid": "^14.0.0",
     "yup": "^1.7.1"
   },

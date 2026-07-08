@@ -1,11 +1,24 @@
-import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
 import styles from '../styles/App.module.css';
+import "swiper/css";
 
 import compo_latest from '../../../hooks/components/compo_latest.json';
+import compo_route from '../../../hooks/components/compo_route.json';
+import { CiSquarePlus } from "react-icons/ci";
 
 import image1 from '../assets/image1.png';
 
 const Home = () => {
+  const navigate = useNavigate();
+
+  const images = [
+    "https://drive.google.com/thumbnail?id=1LvPt-f4Wwwe0yXfswxN3kpMnJmATQp0A&sz=w1000",
+    "https://drive.google.com/thumbnail?id=11H4cUym-7PgOAobuOmmyPTye9eEMHBbF&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1jFdXh1_Zehfkz7uT9f8TVtZ-eNQxetrs&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1Anmic2xLgTPjSn5t6vLmplDWlcdmr6Ig&sz=w1000"
+  ];
   return (
     <>
       <div className={styles.Home}>
@@ -21,6 +34,35 @@ const Home = () => {
           {/* News */}
           <div className={styles.news}>
             <h1 style={{ textAlign: 'center' }}>NEWS</h1>
+            <br />
+            <div className={styles.box_news}>
+              <div className={styles.box_img_news}>
+                <Swiper spaceBetween={30} centeredSlides={true} autoplay={{ delay: 2000, disableOnInteraction: false, }} modules={[Autoplay]} className="mySwiper" >
+                  {images.map((img, idx) => (
+                    <SwiperSlide key={idx}>
+                      <img src={img} alt="background" style={{ width: '100%', height: '350px', objectFit: 'cover' }} />
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </div>
+              <div className={styles.box_latest_all}>
+                <h2 style={{ textAlign: 'left', marginTop: '10px' }}>Latest</h2>
+                <hr size={3} color='#ffffffff' style={{ marginTop: '10px' }} />
+                <div className={styles.box_latest}>
+                  {compo_latest.latest.slice(0, 4).map((item, index) => (
+                    <Link to={item.link} style={{ textDecoration: 'none' }}>
+                      <div key={index} className={styles.item_latest}>
+                        <div className={styles.title}>{item.title}</div>
+                        <div className={styles.date}>{item.date}</div>
+                      </div>
+                    </Link>
+                  ))}
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'right', marginTop: '20px' }}>
+                    <button onClick={() => navigate(`${compo_route.news_page.p1}`)} className={styles.btn_More}><CiSquarePlus className={styles.icon} /> More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
