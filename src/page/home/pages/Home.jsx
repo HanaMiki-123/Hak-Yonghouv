@@ -24,13 +24,8 @@ const Home = () => {
     <>
       <div className={styles.Home}>
         <section className={styles.home}>
-          {/* Background */}
           <img src={image1} alt="background" className={styles.hero_bg} />
-
-          {/* Hero overlay content */}
           <div className={styles.hero_overlay}>
-
-            {/* ── Left: Text ── */}
             <div className={styles.hero_left}>
               <div className={styles.hero_tag}>
                 <span className={styles.dot}></span>
@@ -63,8 +58,6 @@ const Home = () => {
                 </button>
               </div>
             </div>
-
-            {/* ── Right: Logo + Stats ── */}
             <div className={styles.hero_right}>
               <div className={styles.hero_logo_box}>
                 <img src="https://www.houv.online/src/image/image1.jpg" className={styles.hero_logo_img} alt="logo" />

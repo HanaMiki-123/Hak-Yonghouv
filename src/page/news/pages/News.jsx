@@ -24,13 +24,13 @@ const News = () => {
 
           </div>
           <div className={style.container_btn_info}>
-
             <button
               onClick={() => setActive("latest")}
               className={style.btn_info}
               style={{
-                backgroundColor: active === "latest" ? "#2e2e2e" : "#d4d4d4",
-                color: active === "latest" ? "#fff" : "#000",
+                backgroundColor: active === "latest" ? "rgba(79, 195, 247, 0.15)" : "rgba(255, 255, 255, 0.03)",
+                border: active === "latest" ? "1px solid rgba(79, 195, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)",
+                color: active === "latest" ? "#4fc3f7" : "rgba(255, 255, 255, 0.6)",
               }}
             >
               Latest
@@ -40,8 +40,9 @@ const News = () => {
               onClick={() => setActive("info")}
               className={style.btn_info}
               style={{
-                backgroundColor: active === "info" ? "#2e2e2e" : "#d4d4d4",
-                color: active === "info" ? "#fff" : "#000",
+                backgroundColor: active === "info" ? "rgba(79, 195, 247, 0.15)" : "rgba(255, 255, 255, 0.03)",
+                border: active === "info" ? "1px solid rgba(79, 195, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)",
+                color: active === "info" ? "#4fc3f7" : "rgba(255, 255, 255, 0.6)",
               }}
             >
               Info
@@ -51,13 +52,13 @@ const News = () => {
               onClick={() => setActive("update")}
               className={style.btn_info}
               style={{
-                backgroundColor: active === "update" ? "#2e2e2e" : "#d4d4d4",
-                color: active === "update" ? "#fff" : "#000",
+                backgroundColor: active === "update" ? "rgba(79, 195, 247, 0.15)" : "rgba(255, 255, 255, 0.03)",
+                border: active === "update" ? "1px solid rgba(79, 195, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)",
+                color: active === "update" ? "#4fc3f7" : "rgba(255, 255, 255, 0.6)",
               }}
             >
               Update
             </button>
-
           </div>
           <div className={style.container_box_all}>
             {active === "latest" && <Latest />}

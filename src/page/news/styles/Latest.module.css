@@ -1,37 +1,42 @@
 .latest {
     width: min(1400px, 100%);
-    margin: 15px auto;
-    padding: 10px;
-    border: 2.5px solid #dededea1;
-    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    background-color: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(10px);
     display: flex;
-    gap: 20px;
-    border-radius: 5px;
+    gap: 24px;
+    border-radius: 12px;
     text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    align-items: center;
 }
 
 .latest:hover {
-    border: 2.5px solid #8c8888;
-    background-color: var(--whiltte);
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, .1);
+    border: 1px solid rgba(79, 195, 247, 0.4);
+    background-color: rgba(255, 255, 255, 0.04);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 15px rgba(79, 195, 247, 0.15);
 }
 
 .more {
     width: 100%;
     display: block;
     margin: 30px auto;
-    padding: 10px 40px;
-    border: 2px solid rgba(217, 217, 217, 0.908);
-    border-radius: 5px;
-    background-color: rgba(217, 217, 217, 0.908);
-    color: #333;
-    font-size: 16px;
+    padding: 12px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: 600;
     cursor: pointer;
-    transition: .3s ease;
+    transition: all 0.3s ease;
 }
 
 .more:hover {
-    background-color: #000;
-    color: white;
+    background-color: rgba(79, 195, 247, 0.15);
+    border-color: rgba(79, 195, 247, 0.4);
+    color: #4fc3f7;
 }
