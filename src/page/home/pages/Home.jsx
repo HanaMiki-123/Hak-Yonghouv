@@ -24,7 +24,54 @@ const Home = () => {
     <>
       <div className={styles.Home}>
         <section className={styles.home}>
-          <img src={image1} alt="background" />
+          {/* Background */}
+          <img src={image1} alt="background" className={styles.hero_bg} />
+
+          {/* Hero overlay content */}
+          <div className={styles.hero_overlay}>
+
+            {/* ── Left: Text ── */}
+            <div className={styles.hero_left}>
+              <div className={styles.hero_tag}>
+                <span className={styles.dot}></span>
+                Welcome to my world
+              </div>
+
+              <h1 className={styles.hero_name}>
+                Hak <span>Yonghouv</span>
+              </h1>
+
+              <p className={styles.hero_title}>
+                Web Developer · Designer · Creator
+              </p>
+
+              <p className={styles.hero_desc}>
+                សូមស្វាគមន៍មកកាន់គេហទំព័ររបស់ខ្ញុំ។
+                ខ្ញុំចែករំលែកព័ត៌មាន គម្រោង និងភាពច្នៃប្រឌិតផ្សេងៗ
+                ដែលបានបង្កើតឡើងដោយចំណង់ចំណូលចិត្ត។
+              </p>
+
+              <div className={styles.hero_actions}>
+                <button
+                  className={styles.hero_btn_primary}
+                  onClick={() => navigate(compo_route.news_page.p1)}
+                >
+                  Explore News
+                </button>
+                <button className={styles.hero_btn_secondary}>
+                  About Me
+                </button>
+              </div>
+            </div>
+
+            {/* ── Right: Logo + Stats ── */}
+            <div className={styles.hero_right}>
+              <div className={styles.hero_logo_box}>
+                <img src="https://www.houv.online/src/image/image1.jpg" className={styles.hero_logo_img} alt="logo" />
+              </div>
+            </div>
+
+          </div>
         </section>
 
         <section className={styles.section2}>
