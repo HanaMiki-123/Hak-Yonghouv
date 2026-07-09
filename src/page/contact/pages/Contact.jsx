@@ -4,9 +4,8 @@ import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt, FaGithub, FaTelegramPlane, FaFa
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 
-// ⚠️ Note: Please replace these with your actual Service ID and Template ID from EmailJS dashboard
-const SERVICE_ID = "service_k52vhhm"; // Replace with your Service ID
-const TEMPLATE_ID = "template_rtx49uo"; // Replace with your Template ID
+const SERVICE_ID = "service_k52vhhm";
+const TEMPLATE_ID = "template_rtx49uo";
 const PUBLIC_KEY = "UBgUEP2wpEfm6QBgg";
 
 const Contact = () => {
@@ -44,11 +43,11 @@ const Contact = () => {
     setIsSending(true);
 
     const templateParams = {
-      name: formData.name,        // ត្រូវនឹង {{name}} ក្នុង template
-      email: formData.email,      // ត្រូវនឹង {{email}} (Reply To)
-      title: formData.subject,    // ត្រូវនឹង {{title}} ក្នុង Subject
-      message: formData.message,  // ត្រូវនឹង {{message}}
-      time: new Date().toLocaleString(), // ត្រូវនឹង {{time}} ដែលឃើញក្នុង template content
+      name: formData.name,
+      email: formData.email,
+      title: formData.subject,
+      message: formData.message,
+      time: new Date().toLocaleString(),
     };
 
     emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)

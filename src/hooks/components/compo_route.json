@@ -2,6 +2,9 @@
     "home_page": {
         "p1": "/"
     },
+    "about_page": {
+        "p1": "/about"
+    },
     "news_page": {
         "p1": "/news"
     },

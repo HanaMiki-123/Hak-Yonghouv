@@ -39,7 +39,7 @@ const Home = () => {
                 >
                   Explore News
                 </button>
-                <button className={styles.hero_btn_secondary}>About Me</button>
+                <button className={styles.hero_btn_secondary} onClick={() => navigate(compo_route.about_page.p1)}>About Me</button>
               </div>
             </div>
             <div className={styles.hero_right}>

@@ -46,7 +46,7 @@ const Header = () => {
                     <nav className={style.navbar}>
                         <ul className={style.ul}>
                             <Link to={route.home_page.p1} className={style.link}><li className={style.li}>Home</li></Link>
-                            <Link to="" className={style.link}><li className={style.li}>About</li></Link>
+                            <Link to={route.about_page.p1} className={style.link}><li className={style.li}>About</li></Link>
                             <Link to={route.news_page.p1} className={style.link}><li className={style.li}>News</li></Link>
                             <div className={style.link}>
                                 <li className={style.li}>
