@@ -6,8 +6,7 @@
             "description": "Houv BDA is a lightweight desktop application designed to provide essential tools for everyday use without requiring complex configuration or significant computer resources. The main goal is to allow users to start working immediately after installation without having to learn complicated processes or settings.",
             "date": "01 July 2026",
             "category": "Info",
-            "image": "https://drive.google.com/thumbnail?id=1jFdXh1_Zehfkz7uT9f8TVtZ-eNQxetrs&sz=w1000",
-            "link": "/news"
+            "image": "https://drive.google.com/thumbnail?id=1jFdXh1_Zehfkz7uT9f8TVtZ-eNQxetrs&sz=w1000"
         },
         {
             "id": "5",
@@ -16,7 +15,16 @@
             "date": "01 July 2026",
             "category": "Info",
             "image": "https://drive.google.com/thumbnail?id=1Anmic2xLgTPjSn5t6vLmplDWlcdmr6Ig&sz=w1000",
-            "link": "/news"
+            "fullInfomation": {
+                "contect_1": {
+                    "title": "Houv BWF | Houv Basic Website Frontend",
+                    "image": "https://drive.google.com/thumbnail?id=1Anmic2xLgTPjSn5t6vLmplDWlcdmr6Ig&sz=w1000",
+                    "url_web": "",
+                    "description": {
+                        "p1": ""
+                    }
+                }
+            }
         },
         {
             "id": "4",
@@ -25,7 +33,20 @@
             "date": "01 July 2026",
             "category": "Info",
             "image": "https://drive.google.com/thumbnail?id=11H4cUym-7PgOAobuOmmyPTye9eEMHBbF&sz=w1000",
-            "link": "/news"
+            "fullInfomation": {
+                "contect_1": {
+                    "title": "HouvPRV | Houv Project React + Vite",
+                    "image": "https://drive.google.com/thumbnail?id=11H4cUym-7PgOAobuOmmyPTye9eEMHBbF&sz=w1000",
+                    "url_web": "https://houv-prv.vercel.app",
+                    "description": {
+                        "p1": "វាជាគេហទំព័រមួយដែលពួកយើងបានបង្កើតឡើងមកដោយមាននូវគម្រោង Framwork Reactjs និង Vite ហើយពួកយើងក៏បានធ្វើការ install នូវ nodemodule ជាច្រើនផ្ដែរដោយអ្នកទាំងអស់គ្នាគ្រាន់តែចូលទៅធ្វើការ install យកនូវ file ZIP ហើយមកធ្វើការពន្លាបន្ទាប់មកអ្នកទាំងអស់គ្នាអាចធ្វើការសរសេរកូដបានតែម្តងដោយមិនចាំបាច់ត្រូវចំណាយពេលនៅក្នុង install nodemodule ម្តងទៀតឡើយ។",
+                        "image1": "",
+                        "p2": "បន្ថែមពីលើនេះទៅទៀតនៅក្នុង framwork នឹងគឺពួកយើងក៏បានធ្វើការភ្ជាប់នូវ Version ជាមួយនឹង Title website នៅក្នុង package.json ដូច្នេះអ្នកប្រើប្រាស់អាចធ្វើការប្រើប្រាស់ cmd ដើម្បីធ្វើការបញ្ជាឬកែប្រែបាន ហើយប្រសិនបើអ្នកទាំងអស់គ្នាមិនបានដឹងអ្នកទាំងអស់គ្នាអាចធ្វើការឆែកមើលនៅ File README.md ដោយពួកយើងបានធ្វើការសរសេរណែនាំនៅក្នុងនឹង។",
+                        "image2": "",
+                        "p3": "នៅក្នុង Project ទាំងអស់នឹងពួកយើងក៏បានធ្វើការដាក់បញ្ចូលនូវវ file មួយឈ្មោះ NOTED.houv ដែលអ្នកទាំងអស់គ្នាអាចធ្វើការបើក file នឹងបានដោយដោយមើលលការណែនាំនៅក្នុង file README.md ព្រោះពួកយើងបានធ្វើការណែនាំអ្នកទាំងអស់គ្នានៅក្នុង file មួយនឹង។"
+                    }
+                }
+            }
         },
         {
             "id": "3",
@@ -34,7 +55,6 @@
             "date": "27 June 2026",
             "category": "Info",
             "image": "https://drive.google.com/thumbnail?id=1LvPt-f4Wwwe0yXfswxN3kpMnJmATQp0A&sz=w1000",
-            "link": "/news",
             "fullInfomation": {
                 "contect_1": {
                     "title": "HouvEncrypt (Secure Client-Side Cryptography Tool)",
@@ -47,7 +67,7 @@
                         "image2": "",
                         "p3": "លើសពីនេះទៅទៀតពួកយើងក៏បានបង្កើតជាមួយនឹង system មួយដែលជាកន្លែងរក្សាទុកនូងអក្សរ និង Code ដែលបាន Encrypt នឹងដូចគ្នាដើម្បីជៀងវាងក្នុងរក្សាទុក code នៅលើ device ដែលជាចំណុចប្រឈមនឹងត្រូវមានអ្នកលួចយកបាន។",
                         "image3": "",
-                        "p4": "នេះគឺជា Link ដែលភ្ជាប់ទៅកាន់ system មួយនឹង : <a href=\"https://safe-box-a2v3.vercel.app\">https://safe-box-a2v3.vercel.app</a>",
+                        "p4": "នេះគឺជា Link ដែលភ្ជាប់ទៅកាន់ system មួយនឹង : <a href=\"https://safe-box-a2v3.vercel.app\" target=\"_blank\">https://safe-box-a2v3.vercel.app</a>",
                         "image4": "",
                         "image5": "",
                         "image6": ""
@@ -80,7 +100,6 @@
             "date": "20 June 2026",
             "category": "Info",
             "image": "https://www.houv.online/src/image/image4.png",
-            "link": "/news",
             "fullInfomation": {
                 "contect_1": {
                     "title": "HouvVidPull",
@@ -124,7 +143,16 @@
             "date": "17 October 2024",
             "category": "Info",
             "image": "https://www.houv.online/src/image/image2.png",
-            "link": "/news"
+            "fullInfomation": {
+                "contect_1": {
+                    "title": "Hak Yonghouv",
+                    "image": "https://www.houv.online/src/image/image2.png",
+                    "url_web": "https://www.houv.online",
+                    "description": {
+                        "p1": "នេះគឺជា website ផ្ទាល់ខ្លួនរបស់ខខ្ញុំដែលបានបង្កើតឡើងមកក្នុងគោលបំណងបង្ហាញពីព័ត៌មាននឹងចំណេះដឹងផ្ទាល់ខ្លួនរបស់ខ្ញុំមួយចំនួនក្នុងជំនាញ ICT នឹង IT។ យ៉ាងណាម៉ិញនៅលើ website មួយនេះខ្ញុំគ្រាន់តែធ្វើការបង្ហាញពីព័ត៌មានមួយចំនួនតូចរបស់ខ្ញុំតែប៉ុណ្ណោះ។ ម្យ៉ាងទៀតវាក៏អាចជាកន្លែងសម្រាប់បង្ហាញពី project ដែលខ្ញុំបានធ្វើកន្លងមកមួយចំនួនផងដែរ។"
+                    }
+                }
+            }
         }
     ]
 }
