@@ -4,5 +4,8 @@
     },
     "news_page": {
         "p1": "/news"
+    },
+    "contact_page": {
+        "p1": "/contact"
     }
 }

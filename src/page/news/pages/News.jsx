@@ -28,6 +28,7 @@ const News = () => {
               onClick={() => setActive("latest")}
               className={style.btn_info}
               style={{
+                borderTopRightRadius: '10px', borderBottomRightRadius: '10px',
                 backgroundColor: active === "latest" ? "rgba(79, 195, 247, 0.15)" : "rgba(255, 255, 255, 0.03)",
                 border: active === "latest" ? "1px solid rgba(79, 195, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)",
                 color: active === "latest" ? "#4fc3f7" : "rgba(255, 255, 255, 0.6)",
@@ -40,6 +41,7 @@ const News = () => {
               onClick={() => setActive("info")}
               className={style.btn_info}
               style={{
+                borderRadius: '10px',
                 backgroundColor: active === "info" ? "rgba(79, 195, 247, 0.15)" : "rgba(255, 255, 255, 0.03)",
                 border: active === "info" ? "1px solid rgba(79, 195, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)",
                 color: active === "info" ? "#4fc3f7" : "rgba(255, 255, 255, 0.6)",
@@ -52,6 +54,7 @@ const News = () => {
               onClick={() => setActive("update")}
               className={style.btn_info}
               style={{
+                borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px',
                 backgroundColor: active === "update" ? "rgba(79, 195, 247, 0.15)" : "rgba(255, 255, 255, 0.03)",
                 border: active === "update" ? "1px solid rgba(79, 195, 247, 0.4)" : "1px solid rgba(255, 255, 255, 0.08)",
                 color: active === "update" ? "#4fc3f7" : "rgba(255, 255, 255, 0.6)",

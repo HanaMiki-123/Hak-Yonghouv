@@ -61,17 +61,10 @@ const Header = () => {
                                     </ul>
                                 </li>
                             </div>
-                            <Link to="" className={style.link}><li className={style.li}>Contact</li></Link>
+                            <Link to={route.contact_page.p1} className={style.link}><li className={style.li}>Contact</li></Link>
                         </ul>
                     </nav>
                 </div>
-
-                {/* <div className={style.right}>
-                    <div onClick={() => setLogins(true)} style={{ display: 'flex', alignItems: 'center', gap: '10px', paddingTop: '15px', paddingBottom: '15px', cursor: 'pointer' }}>
-                        <h3 style={{ color: 'var(--white)' }}>Log in</h3>
-                        <FaUserCircle className={style.user_icon} style={{ color: 'var(--white)', fontSize: '1.5rem' }} />
-                    </div>
-                </div> */}
             </header >
 
             {Logins && <LoginProps setLogins={setLogins} />}
