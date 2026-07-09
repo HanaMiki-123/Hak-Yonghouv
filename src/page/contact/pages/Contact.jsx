@@ -87,7 +87,7 @@ const Contact = () => {
           <h1 className={styles.title}>
             Get In <span>Touch</span>
           </h1>
-          <p className={styles.subtitle}>
+          <p className={styles.subtitle} style={{ fontFamily: 'khmer' }}>
             មានចម្ងល់ ឬចង់សហការបង្កើតគម្រោងថ្មីៗជាមួយខ្ញុំ?
             សូមផ្ញើសារមកខ្ញុំតាមរយៈទម្រង់ខាងស្តាំ ឬទាក់ទងមកខ្ញុំដោយផ្ទាល់តាមព័ត៌មានខាងក្រោម។
           </p>

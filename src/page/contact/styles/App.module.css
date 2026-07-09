@@ -133,7 +133,6 @@
         }
     }
 
-    /* ── Right Side: Glassmorphism Form ── */
     .form_section {
         background: rgba(255, 255, 255, 0.02);
         border: 1px solid rgba(255, 255, 255, 0.08);
@@ -229,7 +228,6 @@
     }
 }
 
-/* ── Keyframe animations ── */
 @keyframes fadeInLeft {
     from {
         opacity: 0;
