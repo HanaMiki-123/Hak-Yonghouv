@@ -15,13 +15,7 @@ const News = () => {
       <div className={style.News}>
         <div className={style.Container}>
           <div className={style.box_news} data_grid="true" style={{ gap: '20px' }}>
-
-            {json.map((item) => {
-              return (
-                <BoxNewsGrid url={item.url} title={item.title} description={item.description} date={item.date} links={item.links} />
-              );
-            })}
-
+            <BoxNewsGrid />
           </div>
           <div className={style.container_btn_info}>
             <button

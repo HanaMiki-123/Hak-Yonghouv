@@ -27,7 +27,7 @@ const Info = () => {
     return (
         <>
             {latestData.map((item, index) => (
-                <Link key={item.id} to={item.link} className={style.latest} data-aos="fade-up" data-aos-delay={index * 150} >
+                <Link key={item.id} to={`/news/info/${item.id}`} className={style.latest} data-aos="fade-up" data-aos-delay={index * 150} >
                     <div style={{ width: '250px', display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '8px', overflow: 'hidden' }}>
                         <img src={item.image} alt={item.title} loading='eager' fetchPriority='high' style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '8px' }} />
                     </div>
@@ -44,8 +44,8 @@ const Info = () => {
                             <p style={{ color: '#718096', fontSize: '13px' }} >
                                 {item.date}
                             </p>
-                            <p style={{ 
-                                color: item.category === 'Info' ? '#4fc3f7' : '#f687b3', 
+                            <p style={{
+                                color: item.category === 'Info' ? '#4fc3f7' : '#f687b3',
                                 backgroundColor: item.category === 'Info' ? 'rgba(79, 195, 247, 0.1)' : 'rgba(246, 135, 179, 0.1)',
                                 border: item.category === 'Info' ? '1px solid rgba(79, 195, 247, 0.2)' : '1px solid rgba(246, 135, 179, 0.2)',
                                 padding: '2px 10px',

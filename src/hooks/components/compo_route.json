@@ -10,5 +10,8 @@
     },
     "contact_page": {
         "p1": "/contact"
+    },
+    "news_info_page": {
+        "p1": "/news/info/:id"
     }
 }

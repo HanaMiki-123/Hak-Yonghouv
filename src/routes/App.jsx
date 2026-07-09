@@ -13,6 +13,7 @@ import Footer from '../components/ui/Footer';
 
 const Home = lazy(() => import('../page/home/pages/Home'));
 const About = lazy(() => import('../page/about/pages/About'));
+const NewsInfo = lazy(() => import('../page/news_props/NewInfo'));
 const News = lazy(() => import('../page/news/pages/News'));
 const Contact = lazy(() => import('../page/contact/pages/Contact'));
 
@@ -34,6 +35,7 @@ const App = () => {
           <Route path={json.about_page.p1} element={<About />} />
           <Route path={json.news_page.p1} element={<News />} />
           <Route path={json.contact_page.p1} element={<Contact />} />
+          <Route path={json.news_info_page.p1} element={<NewsInfo />} />
         </Routes>
         <ScrollUp />
         <Footer />

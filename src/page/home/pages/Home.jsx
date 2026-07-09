@@ -73,7 +73,7 @@ const Home = () => {
                   <hr size={3} color='#ffffffff' style={{ marginTop: '10px' }} />
                   <div className={styles.box_latest}>
                     {compo_latest.latest.slice(0, 4).map((item, index) => (
-                      <Link to={item.link} style={{ textDecoration: 'none' }}>
+                      <Link key={item.id} to={`/news/info/${item.id}`} style={{ textDecoration: 'none' }}>
                         <div key={index} className={styles.item_latest}>
                           <div className={styles.title}>{item.title}</div>
                           <div className={styles.date}>{item.date}</div>

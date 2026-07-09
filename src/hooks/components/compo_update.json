@@ -1,13 +1,17 @@
 {
     "update": [
         {
-            "id": "",
+            "id": "u1",
             "title": "HouvVidPull",
             "description": "HouvVidPull is a modern and high-speed desktop application that allows you to download high-quality videos from YouTube, TikTok, and Facebook with just a single click.",
             "date": "03 July 2026",
             "category": "Last Update",
             "image": "https://www.houv.online/src/image/image4.png",
-            "link": "/news"
+            "link": "/news",
+            "about_update": {
+                "p1": "នេះគឺជាព័ត៌មានលម្អិតអំពីការ Update ទៅលើ website HouvVidPull",
+                "p2": "1. ពួកយើងបានធ្វើការ update ទៅលើ ចំណុចខ្វះខាតមួយចំនួននៅលើ website ដែលសម្រាប់ install វិដេអូ"
+            }
         }
     ]
 }
