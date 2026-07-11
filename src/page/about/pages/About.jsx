@@ -153,7 +153,7 @@ const About = () => {
           </div>
           <div className={styles.projects_grid}>
             {latestJson.latest.map((item, index) => (
-              <Link to={item.link} key={index} className={styles.project_card}>
+              <Link key={item.id} to={`/news/info/${item.id}`} className={styles.project_card}>
                 <div className={styles.project_img_wrap}>
                   <img src={item.image} alt={item.title} className={styles.project_img} />
                   <div className={styles.project_overlay}>
