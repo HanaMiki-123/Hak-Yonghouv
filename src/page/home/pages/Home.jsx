@@ -56,7 +56,7 @@ const Home = () => {
           <div className={styles.Container}>
             {/* News */}
             <div className={styles.news}>
-              <h1 style={{ textAlign: 'center' }}>NEWS</h1>
+              <h1 style={{ textAlign: 'center', color: 'var(--white)' }}>NEWS</h1>
               <br />
               <div className={styles.box_news}>
                 <div className={styles.box_img_news}>
