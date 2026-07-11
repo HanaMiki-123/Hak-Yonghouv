@@ -5,8 +5,20 @@
             "title": "Houv_EC",
             "description": "",
             "date": "10 July 2026",
-            "category": "Coming Soon",
-            "image": "https://drive.google.com/thumbnail?id=1O2IFp7W_shP44VwALNP1YB0xHeRiQHSV&sz=w1000"
+            "category": "New",
+            "image": "https://drive.google.com/thumbnail?id=14v-aI2f4cM0C5ze83ainY3CosnS4O1pW&sz=w1000",
+            "fullInfomation": {
+                "contect_1": {
+                    "title": "Houv_EC | Houv Encrypt",
+                    "image": "https://drive.google.com/thumbnail?id=14v-aI2f4cM0C5ze83ainY3CosnS4O1pW&sz=w1000",
+                    "url_web": "https://houvec.houv.online",
+                    "description": {
+                        "p1": "Houv_EC ជាគេហទំព័រមួយដែលខ្ញុំបានបង្កើតឡើងមកក្នុងគោលបំណងរក្សាទុកនូវឯកសារសម្ងាតណាមួយក៏ទោះបីជា file ទាំងអស់នឹងត្រូវបានធ្លាក់ទៅដល់ដៃជនអាក្រក់យ៉ាងណាក៏ដោយក៏ពួកគេមិនអាចមើលដឹងដដែរថានៅក្នុង file នឹងមានរក្សាទុកនូវអក្សរអ្វីខ្លះ។ មានតែករណីលើកលែងដែលពួកគេប្រើប្រាស់ website របស់យើងទើបពួកគេអាចមើលដឹងថាក្នុង file នឹងមានសរសេរអ្វីខ្លះ។ ដោយ file ដែលបានទាញយកមកបាននឹងគឺត្រូវបានបម្លែងទៅជាទម្រង់ភាសាកម្រិតទាប ប្រព័ន្ធគោល២ដែលមានតែលេខ ១ នឹងលេខ ០ តែប៉ុណ្ណោះ។ ទោះជាយ៉ាងណាក៏ដោយសម្រាប់ file ទាំងអស់នេះខ្ញុំក៏បានធ្វើការកំណត់នូវ limit វាដោយអាចសរសេរបានតែ 200MB តែប៉ុណ្ណោះ។",
+                        "p2": "ទោះជាយ៉ាងណាក៏ដោយខ្ញុំនៅតែបន្តការអភិវឌ្ឍទៅលើគេហទំព័រមួយនេះឱ្យកាន់តែល្អប្រសើរជាងនេះ។",
+                        "p3": "ក្នុងករណីប្រសិនបើមានអ្នកដែលអាចធ្វើការបំបែក code របស់ខ្ញុំបាននុះខ្ញុំអាចនឹងធ្វើការ update ទៅដល់ការដាក់ Password ទៅលើ file ទាំងអស់នឹងជាដាច់ខាត។"
+                    }
+                }
+            }
         },
         {
             "id": "6",
@@ -82,7 +94,7 @@
                     }
                 },
                 "about_update": {
-                    "p1": "ខាងក្រោមនេះជាប្រវត្តិនៃការ update ទៅលើ website ទាំង២នេះ",
+                    "p1": "ខាងក្រោមនេះជាប្រវត្តិនៃការ update",
                     "update1": {
                         "date": "23 June 2026",
                         "url": "https://houvencrypt-3a9i9royq-hacker122-qpwis-projects.vercel.app",

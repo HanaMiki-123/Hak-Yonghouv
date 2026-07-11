@@ -45,9 +45,9 @@ const Info = () => {
                                 {item.date}
                             </p>
                             <p style={{
-                                color: item.category === 'Info' ? '#4fc3f7' : '#f687b3',
-                                backgroundColor: item.category === 'Info' ? 'rgba(79, 195, 247, 0.1)' : 'rgba(246, 135, 179, 0.1)',
-                                border: item.category === 'Info' ? '1px solid rgba(79, 195, 247, 0.2)' : '1px solid rgba(246, 135, 179, 0.2)',
+                                color: item.category === 'Info' ? '#4fc3f7' : item.category === 'New' ? '#f687b3' : '#fff44f',
+                                backgroundColor: item.category === 'Info' ? 'rgba(79, 195, 247, 0.1)' : item.category === 'New' ? 'rgba(246, 135, 179, 0.1)' : 'rgba(255, 244, 79, 0.1)',
+                                border: item.category === 'Info' ? '1px solid rgba(79, 195, 247, 0.2)' : item.category === 'New' ? '1px solid rgba(246, 135, 179, 0.2)' : '1px solid rgba(255, 244, 79, 0.2)',
                                 padding: '2px 10px',
                                 borderRadius: '20px',
                                 fontSize: '12px',
