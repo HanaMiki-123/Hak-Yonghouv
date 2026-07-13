@@ -18,7 +18,8 @@ const Home = () => {
     "https://drive.google.com/thumbnail?id=1LvPt-f4Wwwe0yXfswxN3kpMnJmATQp0A&sz=w1000",
     "https://drive.google.com/thumbnail?id=11H4cUym-7PgOAobuOmmyPTye9eEMHBbF&sz=w1000",
     "https://drive.google.com/thumbnail?id=1jFdXh1_Zehfkz7uT9f8TVtZ-eNQxetrs&sz=w1000",
-    "https://drive.google.com/thumbnail?id=1Anmic2xLgTPjSn5t6vLmplDWlcdmr6Ig&sz=w1000"
+    "https://drive.google.com/thumbnail?id=1Anmic2xLgTPjSn5t6vLmplDWlcdmr6Ig&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1tYkhGMA0FIv8WmJLbEY7P3KF1eMQiQPq&sz=w1000"
   ];
   return (
     <>
