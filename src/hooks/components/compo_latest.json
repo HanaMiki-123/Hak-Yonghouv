@@ -1,6 +1,28 @@
 {
     "latest": [
         {
+            "id": "8",
+            "title": "CodeHost — Instant Code Hosting",
+            "description": "CodeHost — Instant Code Hosting is a platform for instantly hosting HTML, CSS, and JavaScript websites.",
+            "date": "13 July 2026",
+            "category": "New",
+            "image": "https://drive.google.com/thumbnail?id=1tYkhGMA0FIv8WmJLbEY7P3KF1eMQiQPq&sz=w1000",
+            "fullInfomation": {
+                "contect_1": {
+                    "title": "CodeHost — Instant Code Hosting",
+                    "image": "https://drive.google.com/thumbnail?id=1tYkhGMA0FIv8WmJLbEY7P3KF1eMQiQPq&sz=w1000",
+                    "url_web": "https://web-host.houv.online",
+                    "description": {
+                        "p1": "Houv_Host ជាគេហទំព័រមួយដែលខ្ញុំបង្កើតឡើងមកសម្រាប់ធ្វើការ test host code HTML CSS JavaScript ដោយនៅក្នុងគេហទំព័រនឹងគឺពួកយើងអាចធ្វើការសរសេរ code បានដោយផ្ទាល់បាននៅក្នងនឹងតែម្តងបាន។",
+                        "image1": "https://drive.google.com/thumbnail?id=19QmIRHrKJUUvB5dqDrTxvXpXKf_sfZC-&sz=w1000",
+                        "p2": "សម្រាប់គម្រោងបន្ទាប់ខ្ញុំអាចនឹងធ្វើការបន្ថែមនូវមុខខងារមួយចំនួនទៀតដដើម្បីឱ្យវាកាន់តែមានភាពងាយស្រួលសម្រាប់ពួកយើងក្នុងការប្រើប្រាស់។",
+                        "p3": "ព្រមាន : ខ្ញុំមិនគាំទ្រឱ្យអ្នកបង្កើត website ពិតប្រាកដមក host នៅលើ website របស់យើងនុះទេ ព្រោះវាមិនមែនជាកន្លែងសម្រាប់ host website ពិតប្រាកដឡើយ។ គោលបំណងចំបងរបស់ពួកយើងគែបង្កើតឡើងមកសម្រាប់តែអ្នកដែលចង់សិក្សានឹងសាកល្បង host ទៅលើ Project ណាមួយតែប៉ុណ្ណោះ។",
+                        "image3": "https://drive.google.com/thumbnail?id=1t5k_29AkxND4zNqvfZ_fu1MuUzceyHix&sz=w1000"
+                    }
+                }
+            }
+        },
+        {
             "id": "7",
             "title": "Houv_EC",
             "description": "Houv_EC is a website that converts plain text into binary. However, when converting the binary back into plain text, the resulting text cannot be read properly.",
