@@ -263,73 +263,38 @@ const PageFullinfomationWeb = () => {
                         {
                             aboutUpdate && (
                                 <div className={style.updateSection}>
-                                    <h3 className={style.updateTitle} style={{ fontFamily: 'khmer' }}>
+
+                                    <h3
+                                        className={style.updateTitle}
+                                        style={{ fontFamily: 'khmer' }}
+                                    >
                                         <Clock size={18} />
                                         ប្រវត្តិការ Update
                                     </h3>
+
                                     {
-                                        aboutUpdate.p1 && (
-                                            <p className={style.updateIntro} style={{ fontFamily: 'khmer' }}>
-                                                {aboutUpdate.p1}
-                                            </p>
-                                        )
+                                        Object.entries(aboutUpdate)
+                                            .filter(([key]) => /^p\d+$/.test(key))
+                                            .sort((a, b) => {
+                                                const numA = Number(a[0].replace("p", ""));
+                                                const numB = Number(b[0].replace("p", ""));
+                                                return numA - numB;
+                                            })
+                                            .map(([key, value]) => (
+                                                <p
+                                                    key={key}
+                                                    className={style.updateIntro}
+                                                    style={{ fontFamily: "khmer" }}
+                                                >
+                                                    {value}
+                                                </p>
+                                            ))
                                     }
-                                    {
-                                        aboutUpdate.p2 && (
-                                            <p className={style.updateIntro} style={{ fontFamily: 'khmer' }}>
-                                                {aboutUpdate.p2}
-                                            </p>
-                                        )
-                                    }
+
                                     <div className={style.timeline}>
-                                        {
-                                            Object.entries(aboutUpdate)
-                                                .filter(
-                                                    ([key]) =>
-                                                        key.toLowerCase()
-                                                            .includes('update')
-                                                )
-                                                .map(([key, val]) => (
-                                                    <div
-                                                        className={style.timelineItem}
-                                                        key={key}
-                                                    >
-                                                        <div className={style.timelineDot} />
-                                                        <div className={style.timelineBody}>
-                                                            <div className={style.timelineDate}>
-                                                                {val.date}
-                                                            </div>
-                                                            {
-                                                                val.url && (
-                                                                    <a
-                                                                        href={
-                                                                            val.url.startsWith('http')
-                                                                                ?
-                                                                                val.url
-                                                                                :
-                                                                                `https://${val.url}`
-                                                                        }
-                                                                        target="_blank"
-                                                                        rel="noopener noreferrer"
-                                                                        className={style.timelineUrl}
-                                                                    >
-                                                                        {val.url}
-                                                                        <ExternalLink size={12} />
-                                                                    </a>
-                                                                )
-                                                            }
-                                                            {
-                                                                val.status && (
-                                                                    <span className={style.timelineStatus} style={{ fontFamily: 'khmer' }}>
-                                                                        {val.status}
-                                                                    </span>
-                                                                )
-                                                            }
-                                                        </div>
-                                                    </div>
-                                                ))
-                                        }
+                                        ...
                                     </div>
+
                                 </div>
                             )
                         }
