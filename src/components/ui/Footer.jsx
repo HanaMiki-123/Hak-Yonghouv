@@ -35,7 +35,7 @@ const Footer = () => {
                         <div>
                             <h4 className={style.navigation}>APPLICATION</h4>
                             <ul className={style.ul_nav}>
-                                <li><Link className={style.a_nav} to="">Source Code <FaExternalLinkAlt /></Link></li>
+                                <li><Link className={style.a_nav} to="https://github.com/HanaMiki-123/Hak-Yonghouv.git">Source Code <FaExternalLinkAlt /></Link></li>
                             </ul>
                         </div>
                     </div>
