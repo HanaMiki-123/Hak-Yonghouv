@@ -1,11 +1,40 @@
 {
     "update": [
         {
+            "id": "u4",
+            "title": "Houv_EC",
+            "description": "Houv_EC is a website that converts plain text into binary. However, when converting the binary back into plain text, the resulting text cannot be read properly.",
+            "date": "14 July 2026",
+            "category": "Last Update",
+            "image": "https://drive.google.com/thumbnail?id=14v-aI2f4cM0C5ze83ainY3CosnS4O1pW&sz=w1000",
+            "about_update": {
+                "p1": "នេះគឺជាព័ត៌មានលម្អិតអំពីការ Update ទៅលើ website Houv_EC",
+                "p2": "1. ខ្ញុំបានធ្វើការកែសម្រូបនូវកំហុសបច្ចេកទេសផ្សេងៗដែលមាននៅក្នុង website មួយនេះ។",
+                "p3": "2. ខ្ញុំបានបន្ថែមនូវមុខងារមួយចំនួនចដូចជាអាចធ្វើការបង្កើត File Folder បាន មុខងារកំណត់ file ជា Private or Public Auto save and run អាចតំឡើង project របស់អ្នកចូលទៅក្នុង computer របស់អ្នកបាន អាចកំណត់ domain បាន។",
+                "p4": "3. ខ្ញុំបានកែសម្រួលទៅលើផ្នែកសរសេរ code ឱ្យកាន់តែមានភាពងាយស្រួលសម្រាប់អ្នកប្រើប្រាស់។"
+            }
+        },
+        {
+            "id": "u3",
+            "title": "Houv_PRV",
+            "description": "Houv Project React + Vite A blazing-fast starter powered by React 18 and Vite 5. Download the ZIP, run npm install, and ship.",
+            "date": "14 July 2026",
+            "category": "Last Update",
+            "image": "https://drive.google.com/thumbnail?id=11H4cUym-7PgOAobuOmmyPTye9eEMHBbF&sz=w1000",
+            "about_update": {
+                "p1": "នេះគឺជាព័ត៌មានលម្អិតអំពីការ Update ទៅលើ website Houv_EC",
+                "p2": "1. ខ្ញុំបានធ្វើការ update ទៅលើទម្រង់នៃការរៀបចំ file នឹង folder ផ្សេងៗនៅក្នុង file zip ដើម្បីឱ្យអ្នកប្រើប្រាស់បានកាន់តែងាយស្រួល។",
+                "p3": "2. ខ្ញុំក៏បានធ្វើការដាក់បញ្ចូលជាមួយនឹង TailwindCSS ផងដែរដើម្បីឱ្យកាន់តែងាយស្រួលដល់អ្នកប្រើប្រាស់ដោយមិនចាំបាច់នៅក្នុងការភ្ជាប់ TailwindCSS ទៀតឡើយ។",
+                "p4": "3. ខ្ញុំបានធ្វើការដកចេញនូវមុខងារផ្សេងៗដែលមិនសូវមានប្រយោជន៍ចេញដោយជំនួសមកវិញតម្រងូវឱ្យអ្នកទាំងអស់គ្នាធ្វើការ install វាដោយខ្លួនឯង។",
+                "p5": "4. ខ្ញុំក៏បានធ្វើការ Fix នូវចំណុចដែលមានបញ្ហាមួយចំនួនផងដែរ។"
+            }
+        },
+        {
             "id": "u2",
             "title": "Houv_EC",
             "description": "Houv_EC is a website that converts plain text into binary. However, when converting the binary back into plain text, the resulting text cannot be read properly.",
             "date": "12 July 2026",
-            "category": "Last Update",
+            "category": "Update",
             "image": "https://drive.google.com/thumbnail?id=14v-aI2f4cM0C5ze83ainY3CosnS4O1pW&sz=w1000",
             "about_update": {
                 "p1": "នេះគឺជាព័ត៌មានលម្អិតអំពីការ Update ទៅលើ website Houv_EC",
