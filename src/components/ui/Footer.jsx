@@ -26,10 +26,10 @@ const Footer = () => {
                         <div>
                             <h4 className={style.navigation}>MENU</h4>
                             <ul className={style.ul_nav}>
-                                <li><Link className={style.a_nav} to="">Home</Link></li>
-                                <li><Link className={style.a_nav} to="">About</Link></li>
+                                <li><Link className={style.a_nav} to={route.home_page.p1}>Home</Link></li>
+                                <li><Link className={style.a_nav} to={route.about_page.p1}>About</Link></li>
                                 <li><Link className={style.a_nav} to={route.news_page.p1}>News</Link></li>
-                                <li><Link className={style.a_nav} to="">Contact</Link></li>
+                                <li><Link className={style.a_nav} to={route.contact_page.p1}>Contact</Link></li>
                             </ul>
                         </div>
                         <div>
