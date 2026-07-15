@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm version patch --no-git-tag-version && node generate-manifest.js && vite build",
+    "build": "npm version patch --no-git-tag-version && node generate-manifest.js && git add . && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
