@@ -1,6 +1,18 @@
 {
     "update": [
         {
+            "id": "u6",
+            "title": "HouvVidPull",
+            "description": "HouvVidPull is a modern and high-speed desktop application that allows you to download high-quality videos from YouTube, TikTok, and Facebook with just a single click.",
+            "date": "15 July 2026",
+            "category": "Last Update",
+            "image": "https://www.houv.online/src/image/image4.png",
+            "about_update": {
+                "p1": "នេះគឺជាព័ត៌មានលម្អិតអំពីការ Update ទៅលើ website HouvVidPull",
+                "p2": "1. ខ្ញុំបានធ្វើការកែប្រែនូវកំហុសបច្ចេកទេសមួយចំនួនដែលមានលើ file rar នឹងលើគេហទំព័រផ្ទាល់។"
+            }
+        },
+        {
             "id": "u5",
             "title": "CodeHost — Instant Code Hosting",
             "description": "CodeHost — Instant Code Hosting is a platform for instantly hosting HTML, CSS, and JavaScript websites.",
@@ -59,7 +71,7 @@
             "title": "HouvVidPull",
             "description": "HouvVidPull is a modern and high-speed desktop application that allows you to download high-quality videos from YouTube, TikTok, and Facebook with just a single click.",
             "date": "03 July 2026",
-            "category": "Last Update",
+            "category": "Update",
             "image": "https://www.houv.online/src/image/image4.png",
             "about_update": {
                 "p1": "នេះគឺជាព័ត៌មានលម្អិតអំពីការ Update ទៅលើ website HouvVidPull",
