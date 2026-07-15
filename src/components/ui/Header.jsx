@@ -65,6 +65,7 @@ const Header = () => {
                                     </ul>
                                 </li>
                             </div>
+                            <Link to={route.library_page.p1} className={style.link}><li className={style.li}>Library</li></Link>
                             <Link to={route.contact_page.p1} className={style.link}><li className={style.li}>Contact</li></Link>
                         </ul>
                     </nav>

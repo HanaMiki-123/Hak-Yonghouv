@@ -11,6 +11,9 @@
     "contact_page": {
         "p1": "/contact"
     },
+    "library_page": {
+        "p1": "/library"
+    },
     "news_info_page": {
         "p1": "/news/info/:id"
     }

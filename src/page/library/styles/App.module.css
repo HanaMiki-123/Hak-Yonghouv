@@ -1,0 +1,113 @@
+.Library {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #090e1a 0%, #111a2e 100%);
+    color: #fff;
+    overflow-x: hidden;
+
+    .Library_Content {
+        padding-top: 15vh;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.Library_Header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+    outline: none;
+    transition: all 0.3s ease;
+
+    &:focus-visible {
+        outline: none;
+        border: 1px solid #0095ff;
+        box-shadow: 0 0 10px #0095ff;
+    }
+}
+
+.Library_props {
+    border: 1px solid #979b9e97;
+    border-radius: 15px;
+    padding: 15px;
+    width: 100%;
+    list-style: none;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    animation: startUP 1s ease both;
+
+
+
+    &:hover {
+        border: 1px solid #0095ff;
+        box-shadow: 0 0 10px #0095ff;
+    }
+}
+
+.download {
+    text-decoration: none;
+    color: #0095ff;
+    padding: 10px;
+    border: 1px solid #0095ff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: #0095ff;
+        color: #fff;
+    }
+}
+
+.more {
+    width: 100%;
+    display: block;
+    margin: 30px auto;
+    padding: 12px 40px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.03);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more:hover {
+    background-color: rgba(79, 195, 247, 0.15);
+    border-color: rgba(79, 195, 247, 0.4);
+    color: #4fc3f7;
+}
+
+@keyframes startUP {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

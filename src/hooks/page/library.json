@@ -1,0 +1,102 @@
+{
+    "Library_props": [
+        {
+            "id": "14",
+            "title": "Codeblocks",
+            "from": "Codeblocks",
+            "size": "404 MB",
+            "link": "https://sourceforge.net/projects/codeblocks/files/Binaries/25.03/Windows/codeblocks-25.03mingw-setup.exe"
+        },
+        {
+            "id": "13",
+            "title": "Sublime Text",
+            "from": "Sublime Text",
+            "size": "15.4 MB",
+            "link": "https://drive.google.com/uc?id=1AnlwstxxBLyb0np-wA-Q2Gx4uf67EBRt&export=download"
+        },
+        {
+            "id": "12",
+            "title": "Anydesk",
+            "from": "Anydesk",
+            "size": "8 MB",
+            "link": "https://drive.google.com/uc?id=1xOkZeKyUpDy4cEfWy9IvzV14Ti41FCN4&export=download"
+        },
+        {
+            "id": "11",
+            "title": "Visual Studio Code",
+            "from": "Visual Studio Code",
+            "size": "195.5 MB",
+            "link": "https://drive.google.com/uc?id=1GoP9wWT6X9MrSyMXA5ppvnHe2csEuGbv&export=download"
+        },
+        {
+            "id": "10",
+            "title": "OBS Studio v32.1.2",
+            "from": "OBS Studio",
+            "size": "150 MB",
+            "link": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-32.1.2-Windows-x64-Installer.exe"
+        },
+        {
+            "id": "9",
+            "title": "Office Deployment Tool",
+            "from": "Microsoft",
+            "size": "3.4 MB",
+            "link": "https://download.microsoft.com/download/6c1eeb25-cf8b-41d9-8d0d-cc1dbc032140/officedeploymenttool_20131-20090.exe"
+        },
+        {
+            "id": "8",
+            "title": "Node js",
+            "from": "Node js",
+            "size": "31.4 MB",
+            "link": "https://nodejs.org/dist/v24.18.0/node-v24.18.0-x64.msi"
+        },
+        {
+            "id": "7",
+            "title": "Rufus v3.4",
+            "from": "Rufus",
+            "size": "1008 KB",
+            "link": "https://drive.google.com/uc?id=1mVFRytnH_krtOtZL8JcQPfNHZUQF5nhs&export=download"
+        },
+        {
+            "id": "6",
+            "title": "Rufus V2.18",
+            "from": "Rufus",
+            "size": "945 KB",
+            "link": "https://drive.google.com/uc?id=1inuzWYdM67Qwi9nQyKIfDOqKTbl69L8n&export=download"
+        },
+        {
+            "id": "5",
+            "title": "Hiren_s_BootCD_WinPE10_Premium_Edition",
+            "from": "Hiren",
+            "size": "1.52 GB",
+            "link": "https://drive.google.com/uc?id=1zehFbtEbOJshb73wIr2WYFenZbh4jeK6&export=download"
+        },
+        {
+            "id": "4",
+            "title": "Windows 10 (Crack)",
+            "from": "Getintopc",
+            "size": "4.24 GB",
+            "link": "https://drive.google.com/uc?id=1n1oaRWIZqyG9p5kSaNFO3SYHYgZGVUhw&export=download"
+        },
+        {
+            "id": "3",
+            "title": "Windows 10 (64-Bit)",
+            "from": "Microsoft",
+            "size": "4.56 GB",
+            "link": "https://drive.google.com/uc?id=1HkNMdnhiFP9FLDB8uD9TyzZP__grDPhK&export=download"
+        },
+        {
+            "id": "2",
+            "title": "Windows 11 (64-Bit)",
+            "from": "Microsoft",
+            "size": "7.2 GB",
+            "link": "https://drive.google.com/uc?id=1UsldaMpUj8m0IUxqoPOz2rwnFFCYakqJ&export=download"
+        },
+        {
+            "id": "1",
+            "title": "Khmer Unicode Installer For Window",
+            "from": "Ministry of Labour and Vocational Training",
+            "size": "1.6 MB",
+            "link": "https://drive.google.com/uc?id=1jfB5Zxhvaib133Fd9AvPGe-xLCir5stk&export=download"
+        }
+    ]
+}
