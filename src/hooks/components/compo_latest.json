@@ -106,12 +106,12 @@
                         "p1": "HouvEncrypt ជាគេហទំព័រមួយដែលបានបង្កើតឡើងនៅក្នុងគោលបំណងធំមួយគឺជាការ Encrypt file ដើម្បីកុំឱ្យអ្នកដទៃអាចធ្វើការអាចទិន្ន័យសម្ងាត់ដែលមាននៅក្នុង file នឹងបាន។ ជាមួយគ្នានេះដែរនៅលើ website នឹងពួកយើងក៏បានដាក់បញ្ចូលនូវមុខងារ test ហើយក៏អាចធ្វើការ install វាចេញមកក្រៅបានដែរ។",
                         "image1": "https://drive.google.com/thumbnail?id=1jN5AqXywN9KYdBdqSDmJUoiWNExqscNi&sz=w1000",
                         "p2": "ហើយសម្រាប់ file ដែលបាន install ចេញមកក្រៅនឹងមកគឺបានភ្ជាប់ជាមួយនឹង extention .houv ហើយភ្ជាប់ជាមួយគ្នានេះដែរ file ដែលបានបង្កើតនៅក្នង website ដែលជាកន្លែង test សាកល្បងគឺវាអាចបើកចេញតែនៅកន្លែង test សាកល្បងនឹងទេតែវាមិនអាចបើកចេញនៅ website ដែលជាកន្លែងសរសេរ អក្សរផ្សេងបានឡើយ។",
-                        "p3": "សម្រាប់ file extention .houv គឺវាមិនអាច run code បានឡើងព្រោះគោលបំណងនៃការបង្កើត website create file .houv នឹងគឺសម្រាប់តែ text ធម្មតាតែប៉ុណ្ណោះ។ ដូច្នេះសម្រាប់ file .houv ក៏មិនអាចយកទៅធ្វើជា file មេរោគបានដែរ។",
                         "image2": "https://drive.google.com/thumbnail?id=1ViTjCh0yLx8-b1sdZcdJG_ZVK_jloDXp&sz=w1000",
-                        "p4": "លើសពីនេះទៅទៀតពួកយើងក៏បានបង្កើតជាមួយនឹង system មួយដែលជាកន្លែងរក្សាទុកនូងអក្សរ និង Code ដែលបាន Encrypt នឹងដូចគ្នាដើម្បីជៀងវាងក្នុងរក្សាទុក code នៅលើ device ដែលជាចំណុចប្រឈមនឹងត្រូវមានអ្នកលួចយកបាន។",
+                        "p3": "សម្រាប់ file extention .houv គឺវាមិនអាច run code បានឡើងព្រោះគោលបំណងនៃការបង្កើត website create file .houv នឹងគឺសម្រាប់តែ text ធម្មតាតែប៉ុណ្ណោះ។ ដូច្នេះសម្រាប់ file .houv ក៏មិនអាចយកទៅធ្វើជា file មេរោគបានដែរ។",
                         "image3": "https://drive.google.com/thumbnail?id=1tj0RDQInwOErL1BAnFAFiNlPu6fD2WfI&sz=w1000",
-                        "p5": "នេះគឺជា Link ដែលភ្ជាប់ទៅកាន់ system មួយនឹង : <a href=\"https://safe-box-a2v3.vercel.app\" target=\"_blank\">https://safe-box-a2v3.vercel.app</a>",
+                        "p4": "លើសពីនេះទៅទៀតពួកយើងក៏បានបង្កើតជាមួយនឹង system មួយដែលជាកន្លែងរក្សាទុកនូងអក្សរ និង Code ដែលបាន Encrypt នឹងដូចគ្នាដើម្បីជៀងវាងក្នុងរក្សាទុក code នៅលើ device ដែលជាចំណុចប្រឈមនឹងត្រូវមានអ្នកលួចយកបាន។",
                         "image4": "https://drive.google.com/thumbnail?id=1Y1ixd3ebDCR7LBXJoMkab6Ig32Iibidw&sz=w1000",
+                        "p5": "នេះគឺជា Link ដែលភ្ជាប់ទៅកាន់ system មួយនឹង : <a href=\"https://safe-box-a2v3.vercel.app\" target=\"_blank\">https://safe-box-a2v3.vercel.app</a>",
                         "image5": "https://drive.google.com/thumbnail?id=1XbkmUywWiwK0qW257pHTIuRxO04LVnyw&sz=w1000",
                         "image6": "https://drive.google.com/thumbnail?id=1uw4PM2_FK73KYMLg3hcVVk5Q1wyR_ObQ&sz=w1000"
                     }
