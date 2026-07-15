@@ -152,31 +152,50 @@ const About = () => {
             <p className={styles.section_subtitle}>A collection of tools and websites I've built</p>
           </div>
           <div className={styles.projects_grid}>
-            {latestJson.latest.map((item, index) => (
-              <Link key={item.id} to={`/news/info/${item.id}`} className={styles.project_card}>
+            {latestJson.latest.slice(0, 3).map((item) => (
+              <Link
+                key={item.id}
+                to={`/news/info/${item.id}`}
+                className={styles.project_card}
+              >
                 <div className={styles.project_img_wrap}>
-                  <img src={item.image} alt={item.title} className={styles.project_img} />
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className={styles.project_img}
+                  />
                   <div className={styles.project_overlay}>
-                    <span className={styles.project_view}><FaExternalLinkAlt /> View</span>
+                    <span className={styles.project_view}>
+                      <FaExternalLinkAlt /> View
+                    </span>
                   </div>
                 </div>
+
                 <div className={styles.project_info}>
                   <div className={styles.project_top}>
                     <h3 className={styles.project_title}>{item.title}</h3>
                     <span
                       className={styles.project_badge}
                       style={{
-                        color: item.category === 'Info' ? '#4fc3f7' : '#f687b3',
-                        backgroundColor: item.category === 'Info' ? 'rgba(79,195,247,0.1)' : 'rgba(246,135,179,0.1)',
-                        border: item.category === 'Info' ? '1px solid rgba(79,195,247,0.25)' : '1px solid rgba(246,135,179,0.25)',
+                        color: item.category === "Info" ? "#4fc3f7" : "#f687b3",
+                        backgroundColor:
+                          item.category === "Info"
+                            ? "rgba(79,195,247,0.1)"
+                            : "rgba(246,135,179,0.1)",
+                        border:
+                          item.category === "Info"
+                            ? "1px solid rgba(79,195,247,0.25)"
+                            : "1px solid rgba(246,135,179,0.25)",
                       }}
                     >
                       {item.category}
                     </span>
                   </div>
+
                   {item.description && (
                     <p className={styles.project_desc}>{item.description}</p>
                   )}
+
                   <span className={styles.project_date}>{item.date}</span>
                 </div>
               </Link>

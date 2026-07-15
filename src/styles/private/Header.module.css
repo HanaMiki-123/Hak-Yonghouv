@@ -46,18 +46,6 @@
         }
     }
 
-    .brand_name {
-        color: var(--white);
-        user-select: none;
-        font-weight: 800;
-        letter-spacing: 0.5px;
-        font-size: 1.15rem;
-        background: linear-gradient(90deg, #fff, #b3e5fc);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-    }
-
     .navbar {
         display: flex;
         align-items: center;

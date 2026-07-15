@@ -1,7 +1,7 @@
 .footer {
     background: linear-gradient(180deg, rgba(9, 14, 26, 0.95) 0%, rgba(5, 7, 12, 0.98) 100%);
     border-top: 1px solid rgba(255, 255, 255, 0.08);
-    padding: 70px 0 40px;
+    padding: 20px 0 40px;
     position: relative;
     z-index: 5;
 
@@ -14,6 +14,31 @@
         right: 10%;
         height: 1px;
         background: linear-gradient(90deg, transparent, rgba(79, 195, 247, 0.3), transparent);
+    }
+
+    .icon_link {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: rgba(79, 195, 247, 0.05);
+        text-decoration: none;
+
+        &:hover {
+            background: rgba(79, 195, 247, 0.15);
+            border-color: rgba(79, 195, 247, 0.6);
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(79, 195, 247, 0.3);
+        }
+
+        .icon {
+            color: #fff;
+            font-size: 2rem;
+        }
     }
 
     .container {
@@ -36,16 +61,6 @@
                 align-items: center;
                 gap: 8px;
                 margin-bottom: 20px;
-
-                .title_logo {
-                    font-weight: 800;
-                    font-size: 1.3rem;
-                    background: linear-gradient(90deg, #fff, #4fc3f7);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    background-clip: text;
-                    letter-spacing: 0.5px;
-                }
             }
 
             .description {

@@ -6,6 +6,8 @@ import { IoVolumeMute, IoVolumeHigh } from "react-icons/io5";
 import { FaCaretDown, FaUserCircle } from "react-icons/fa";
 import { FaEarthAmericas } from "react-icons/fa6";
 
+import Logo from '../../assets/images/png/logo.png';
+
 import json from '../../hooks/components/compo_header.json';
 import route from '../../hooks/components/compo_route.json';
 
@@ -42,7 +44,9 @@ const Header = () => {
                             <IoVolumeMute className={style.icon_song} style={{ color: "white" }} />
                         )}
                     </div>
-                    <h3 className={style.brand_name}>Hak Yonghouv</h3>
+                    <Link to={route.home_page.p1}>
+                        <img src={Logo} alt="logo" style={{ width: "200px", height: "50px" }} loading="lazy" />
+                    </Link>
                     <nav className={style.navbar}>
                         <ul className={style.ul}>
                             <Link to={route.home_page.p1} className={style.link}><li className={style.li}>Home</li></Link>
