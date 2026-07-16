@@ -1,6 +1,20 @@
 {
     "Library_props": [
         {
+            "id": "16",
+            "title": "XAMPP v8.0.30",
+            "from": "XAMPP",
+            "size": "145 MB",
+            "link": "https://sourceforge.net/projects/xampp/files/XAMPP%20Windows/8.0.30/xampp-windows-x64-8.0.30-0-VS16-installer.exe"
+        },
+        {
+            "id": "15",
+            "title": "Laragon v8.6.1",
+            "from": "Laragon",
+            "size": "227 MB",
+            "link": "https://github.com/leokhoa/laragon/releases/download/8.6.1/laragon-wamp.exe"
+        },
+        {
             "id": "14",
             "title": "Codeblocks",
             "from": "Codeblocks",
