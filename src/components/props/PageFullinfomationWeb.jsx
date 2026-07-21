@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -14,14 +14,17 @@ import {
 } from 'lucide-react';
 
 import style from '../../styles/private/PageFullinfomationWeb.module.css';
-import json1 from '../../hooks/components/compo_latest.json';
-import json2 from '../../hooks/components/compo_update.json';
 
+const API_URL = import.meta.env.VITE_API_BACKEND || 'http://localhost:5000';
 
 const PageFullinfomationWeb = () => {
 
     const { id } = useParams();
     const navigate = useNavigate();
+
+    const [allItems, setAllItems] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
 
     useEffect(() => {
@@ -41,41 +44,53 @@ const PageFullinfomationWeb = () => {
     }, [id]);
 
 
+    // Fetch both latest and update from backend
+    useEffect(() => {
+        const fetchAll = async () => {
+            try {
+                setLoading(true);
+                const [latestRes, updateRes] = await Promise.all([
+                    fetch(`${API_URL}/api/latest`),
+                    fetch(`${API_URL}/api/update`)
+                ]);
 
-    const allItems = useMemo(() => {
+                if (!latestRes.ok) throw new Error('Failed to fetch latest data');
+                if (!updateRes.ok) throw new Error('Failed to fetch update data');
 
-        const latestItems = json1.latest.map(item => ({
-            ...item,
-            source: 'latest'
-        }));
+                const latestJson = await latestRes.json();
+                const updateJson = await updateRes.json();
 
-        const updateItems = json2.update.map(item => ({
-            ...item,
-            source: 'update'
-        }));
+                const latestItems = latestJson.map(item => ({
+                    ...item,
+                    source: 'latest'
+                }));
 
-        return [
-            ...latestItems,
-            ...updateItems
-        ];
+                const updateItems = updateJson.map(item => ({
+                    ...item,
+                    source: 'update'
+                }));
 
+                setAllItems([...latestItems, ...updateItems]);
+            } catch (err) {
+                console.error('PageFullinfomationWeb fetch error:', err);
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+
+        fetchAll();
     }, []);
 
 
-
     const currentItem = useMemo(() => {
-
         return allItems.find(
             item => String(item.id) === String(id)
         );
-
     }, [allItems, id]);
 
 
-
-
     const suggestions = useMemo(() => {
-
         const pool = allItems.filter(
             item => String(item.id) !== String(id)
         );
@@ -83,12 +98,52 @@ const PageFullinfomationWeb = () => {
         const shuffled = [...pool]
             .sort(() => Math.random() - 0.5);
 
-
         return shuffled.slice(0, 3);
 
     }, [allItems, id]);
 
 
+    // Loading state
+    if (loading) {
+        return (
+            <div className={style.container_fullweb}>
+                <div
+                    className={style.notFound}
+                    data-aos="fade-up"
+                >
+                    <Sparkles size={40} color="#4fc3f7" />
+                    <h2 style={{ fontFamily: 'khmer', color: '#4fc3f7' }}>
+                        កំពុងទាញទិន្នន័យ...
+                    </h2>
+                </div>
+            </div>
+        );
+    }
+
+    // Error state
+    if (error) {
+        return (
+            <div className={style.container_fullweb}>
+                <div
+                    className={style.notFound}
+                    data-aos="fade-up"
+                >
+                    <Sparkles size={40} color="#fc8181" />
+                    <h2 style={{ fontFamily: 'khmer', color: '#fc8181' }}>
+                        មានបញ្ហាក្នុងការទាញទិន្នន័យ
+                    </h2>
+                    <button
+                        className={style.btnBack}
+                        onClick={() => navigate('/news')}
+                        style={{ fontFamily: 'khmer' }}
+                    >
+                        <ArrowLeft size={18} />
+                        ត្រឡប់ទៅទំព័រ News
+                    </button>
+                </div>
+            </div>
+        );
+    }
 
 
     if (!currentItem) {

@@ -4,11 +4,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import style from '../styles/Latest.module.css';
-import json from '../../../hooks/components/compo_update.json';
+
+const API_URL = import.meta.env.VITE_API_BACKEND || 'http://localhost:5000';
 
 const Update = () => {
 
     const [visibleCount, setVisibleCount] = useState(5);
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         AOS.init({
@@ -18,11 +22,41 @@ const Update = () => {
         });
     }, []);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const res = await fetch(`${API_URL}/api/update`);
+                if (!res.ok) throw new Error('Failed to fetch update data');
+                const json = await res.json();
+                setData(json);
+            } catch (err) {
+                console.error('Update fetch error:', err);
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
+
     const handleMore = () => {
         setVisibleCount(prev => prev + 5);
     };
 
-    const latestData = json.update.slice(0, visibleCount);
+    const latestData = data.slice(0, visibleCount);
+
+    if (loading) return (
+        <div style={{ textAlign: 'center', color: '#4fc3f7', padding: '40px', fontFamily: 'khmer' }}>
+            កំពុងទាញទិន្នន័យ...
+        </div>
+    );
+
+    if (error) return (
+        <div style={{ textAlign: 'center', color: '#fc8181', padding: '40px', fontFamily: 'khmer' }}>
+            មានបញ្ហាក្នុងការទាញទិន្នន័យ: {error}
+        </div>
+    );
 
     return (
         <>
@@ -45,9 +79,9 @@ const Update = () => {
                                 {item.date}
                             </p>
                             <p style={{
-                                color: item.category === 'Info' ? '#4fc3f7' : item.category === 'New' ? '#f687b3' : '#fff44f',
-                                backgroundColor: item.category === 'Info' ? 'rgba(79, 195, 247, 0.1)' : item.category === 'New' ? 'rgba(246, 135, 179, 0.1)' : 'rgba(255, 244, 79, 0.1)',
-                                border: item.category === 'Info' ? '1px solid rgba(79, 195, 247, 0.2)' : item.category === 'New' ? '1px solid rgba(246, 135, 179, 0.2)' : '1px solid rgba(255, 244, 79, 0.2)',
+                                color: item.category === 'Last update' ? '#fff44f' : '#a0aec0',
+                                backgroundColor: item.category === 'Last update' ? 'rgba(255, 244, 79, 0.1)' : 'rgba(160, 174, 192, 0.1)',
+                                border: item.category === 'Last update' ? '1px solid rgba(255, 244, 79, 0.2)' : '1px solid rgba(160, 174, 192, 0.2)',
                                 padding: '2px 10px',
                                 borderRadius: '20px',
                                 fontSize: '12px',
@@ -60,12 +94,12 @@ const Update = () => {
                 </Link>
             ))}
 
-            {visibleCount < json.update.length && (
+            {visibleCount < data.length && (
                 <button
                     className={style.more}
                     onClick={handleMore}
                     data-aos="fade-up"
-                    data-aos-delay={(json.update.length - visibleCount) * 1000}
+                    data-aos-delay={(data.length - visibleCount) * 1000}
                 >
                     More
                 </button>

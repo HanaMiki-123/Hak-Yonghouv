@@ -4,11 +4,15 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import style from '../styles/Latest.module.css';
-import json from '../../../hooks/components/compo_latest.json';
+
+const API_URL = import.meta.env.VITE_API_BACKEND || 'http://localhost:5000';
 
 const Info = () => {
 
     const [visibleCount, setVisibleCount] = useState(5);
+    const [data, setData] = useState([]);
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState(null);
 
     useEffect(() => {
         AOS.init({
@@ -18,11 +22,43 @@ const Info = () => {
         });
     }, []);
 
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                setLoading(true);
+                const res = await fetch(`${API_URL}/api/latest`);
+                if (!res.ok) throw new Error('Failed to fetch info data');
+                const json = await res.json();
+                // Filter only 'Info' category
+                const filtered = json.filter(item => item.category === 'Info');
+                setData(filtered);
+            } catch (err) {
+                console.error('Info fetch error:', err);
+                setError(err.message);
+            } finally {
+                setLoading(false);
+            }
+        };
+        fetchData();
+    }, []);
+
     const handleMore = () => {
         setVisibleCount(prev => prev + 5);
     };
 
-    const latestData = json.latest.slice(0, visibleCount);
+    const latestData = data.slice(0, visibleCount);
+
+    if (loading) return (
+        <div style={{ textAlign: 'center', color: '#4fc3f7', padding: '40px', fontFamily: 'khmer' }}>
+            កំពុងទាញទិន្នន័យ...
+        </div>
+    );
+
+    if (error) return (
+        <div style={{ textAlign: 'center', color: '#fc8181', padding: '40px', fontFamily: 'khmer' }}>
+            មានបញ្ហាក្នុងការទាញទិន្នន័យ: {error}
+        </div>
+    );
 
     return (
         <>
@@ -60,12 +96,12 @@ const Info = () => {
                 </Link>
             ))}
 
-            {visibleCount < json.latest.length && (
+            {visibleCount < data.length && (
                 <button
                     className={style.more}
                     onClick={handleMore}
                     data-aos="fade-up"
-                    data-aos-delay={(json.latest.length - visibleCount) * 1000}
+                    data-aos-delay={(data.length - visibleCount) * 1000}
                 >
                     More
                 </button>
